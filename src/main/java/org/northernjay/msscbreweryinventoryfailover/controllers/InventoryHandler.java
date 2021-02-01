@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
-@Component
+//@Component
 public class InventoryHandler {
     public Mono<ServerResponse> listInventory(ServerRequest request) {
         return ServerResponse.ok()
