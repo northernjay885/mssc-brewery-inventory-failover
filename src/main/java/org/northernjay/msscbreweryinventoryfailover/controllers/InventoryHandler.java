@@ -16,7 +16,7 @@ import java.util.UUID;
 public class InventoryHandler {
     public Mono<ServerResponse> listInventory(ServerRequest request) {
         return ServerResponse.ok()
-                .contentType(MediaType.APPLICATION_NDJSON)
+                .contentType(MediaType.APPLICATION_JSON)
                 .body(Mono.just(Arrays.asList(
                         BeerInventoryDto.builder()
                 .id(UUID.randomUUID())
